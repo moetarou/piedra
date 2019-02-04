@@ -1,0 +1,177 @@
+* {
+    list-style: none;
+    font-family: 'Nanum Gothic Coding', monospace;
+	margin: 0;
+	padding: 0;
+	border: 0;
+    text-decoration: none;
+    /* border: solid red 1px; */
+}
+
+
+/* header */
+header {
+    background-color:rgba(240, 68, 0, 0.884);
+    color: white; 
+    position: fixed;
+    height: 80px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+header ul {
+    table-layout: fixed; 
+    text-align: center;
+    width: 60%;
+    display: table;
+    margin: 25px auto;
+}
+
+header li {
+    font-size: 25px;
+    cursor: pointer;
+    display: table-cell; 
+}
+.headerList:hover {
+    color: black;
+}
+
+/* container */
+#restaurantImg {
+    display: block;
+    margin:0 auto;
+    padding-top: 200px;  
+    /*border: solid red 1px;*/
+}
+
+#containerImg {
+    display: block;
+    margin: 100px auto;
+    border: dotted rgb(250, 137, 32) 15px;
+    /*border: solid red 5px;*/
+}
+
+
+/* news */
+.scrollTitle {
+    font-size: 40px;
+    text-align: center;
+    margin: 70px 0px;
+    margin-top: 200px;  
+}
+ 
+    /* release float */
+.clearElement {
+    clear: right;
+}
+
+#news {
+    height: auto;
+    width: 60%;
+    margin: 0 auto;
+    /* background-color: rgb(250, 137, 32,0.3); */
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+.newsBlock {
+    text-align: center;
+    padding-top: 30px;
+    /* border: solid red 1px; */
+}
+
+.newsBlock p{
+    display: inline-block;
+    vertical-align: top;
+    border: solid rgb(250, 137, 32) 2px;
+    border-radius: 20px;
+    
+}
+
+.newsP {
+    margin: 40px 40px;
+    height: 200px;
+    width: 200px;
+    padding-top:10px;
+}
+
+.newsImg:hover{
+    width: 315px;
+    height: 265px;
+}
+
+#newsBtn {
+    font-size: 15px;
+    padding: 10px 5px;
+    float: right;
+}
+
+
+
+/* shop */
+.shopInfo {
+    height: 500px;
+    /*border: solid red 1px;*/
+}
+
+.info {
+    font-size: 25px;
+    text-align: center; 
+}
+
+#shopBtn {
+    text-align: center;
+    margin: 30px auto;
+}
+
+#shopBtn input {
+    font-size: 20px;
+    background-color: rgb(250, 137, 32);
+    padding: 10px 20px;
+    border-radius: 10px;
+
+}
+
+#shopPhoto li{
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    width: calc(100% /3);
+    /*border: solid red 1px;*/
+}
+
+
+/* access */
+#access {
+    text-align: center;
+    height: auto;
+    margin-bottom: 100px;
+}
+.address {
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+
+/* footer */
+footer {
+    background-color: rgba(37, 36, 36, 0.753);
+    height: 150px;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+footer p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    /*border: solid red 5px;*/
+}
+
+.fa-instagram {
+    font-size:70px; 
+    color: rgb(250, 137, 32);
+    margin-top: 20px;
+}

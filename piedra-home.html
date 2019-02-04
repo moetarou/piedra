@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>PIEDRA</title>
+        <!-- javascript -->
+        <link rel ="javascript" href="piedra.js">
+        <!-- css -->
+        <link rel="stylesheet" href="piedra-home.css" >
+        <!-- googleFont -->
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding" rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">       
+    </head>
+
+    <body>
+
+
+        <!-- header -->
+        <header>
+            <ul>
+                <li onclick="scrollToTop()" class="headerList">ホーム</li>
+                <li onclick="scrollToNews()" class="headerList">お知らせ</li>
+                <li onclick="scrollToShop()" class="headerList">ショップ</li>
+                <li onclick="scrollToAccess()" class="headerList">アクセス</li>
+            </ul>
+        </header>
+      
+
+        <!-- container -->
+        <div>
+            <img id="restaurantImg" src="C352FFE2-C224-4E55-8EC1-72EFB452C2D7.jpg" width="300px" height="300px" >
+        </div>
+        <div>
+            <img id="containerImg" src="piedra-photo/S__1368085.jpg" width="1000px" height="700px">
+        </div>
+
+
+        <!-- news -->
+        <p class="scrollTitle">お知らせ</p>
+        <div id="news">
+            <div class="newsBlock">
+                <img class="newsImg" src="piedra-photo/S__1368088.jpg" width=300px height="250px">
+                <p class="newsP">コースメニューもご用意しております。ご予約は３日前まで承っております。ご予算に合わせてプランも提案させていただいてます。お気軽にご相談ください！
+                </p>
+            </div>
+            <div class="newsBlock">
+                <img class="newsImg" src="piedra-photo/S__1368089.jpg" width=300px height="250px">
+                <p class="newsP">１２月３０日から１月３日は年末年始のためお休みさせていただきます。４日はランチから営業いたします。</p>
+            </div>
+            <div class="newsBlock">
+                <img class="newsImg" src="piedra-photo/S__1368090.jpg" width=300px height="250px">
+                <p class="newsP">パーティープランのご用意ができました！飲み放題月のプランもございます。３名様からご予約可能です！</p>
+            </div>
+            <!-- empty div -->
+            <input id="newsBtn" type="button" value="お知らせ一覧" onclick="newsOpen()";>
+            <div class=clearElement></div>
+        </div> 
+
+
+        <!-- shop -->
+        <p class="scrollTitle">ショップ</p>
+        <div class="shopInfo">
+            <p class="info">PIEDRAで一番人気のデザートの販売を始めました<br>
+                            PIEDRAチーズケーキ  ¥2,850(税込)15cm <br>
+                            お受け取り希望日の5日前までのご注文をお願いします。<br>
+                            全国配送可  別途送料を頂戴します。(ヤマトクール便冷凍)
+            </p>  
+            <p id="shopBtn">
+            <input  type="button" value="配送をご希望の方はこちら" onclick="toShop()" >
+            </p>
+            <ul id="shopPhoto">
+                <li><img src="piedra-photo/S__1368085.jpg" width="450px" height="300px" class="cake"></li>
+                <li><img src="piedra-photo/S__1368078.jpg" width="450px" height="300px" class="cake"></li>
+                <li><img src="piedra-photo/S__1368083.jpg" width="450px" height="300px" class="cake"></li>
+            </ul>
+        </div>
+      
+
+        <!-- access -->
+        <div id="access">
+            <p class="scrollTitle">アクセス</p>
+            <p class="address">大阪市阿倍野区西田辺1-4-21FUMOSE西田辺1F</p>
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.34348240365!2d135.51394391471544!3d34.620759295004206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000ddd2a4049bdb%3A0x7809453a871c378c!2z44OU44Ko44OJ44Op!5e0!3m2!1sja!2sjp!4v1547472316077" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <p>Follow us!</p>
+            <div id="instagramIcon" onclick="instaOpen()" class="fab fa-instagram"></div>
+        </footer>
+
+
+        <!----javascriptの同期リンク----->
+        <script type="text/javascript" src="piedra.js"></script>
+
+
+    </body>
+</html>
