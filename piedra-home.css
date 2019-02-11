@@ -1,168 +1,136 @@
+@charset "UTF-8";
+
+
 * {
 	margin: 0;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
 
-/* header */
-header {
-    background-color:rgba(240, 68, 0, 0.884);
-    color: white; 
-    position: fixed;
-    height: 80px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 40px;
+body {
    
+    display: grid;
+    grid-template-rows:
+                    [head]100px
+                    [title]auto
+                    [news]auto
+                    [shop]auto
+                    [sub]auto
+                    [foot]100px;
+    grid-template-columns: 20px 1fr 20px;
+    grid-row-gap: 20px;
+    row-gap: 40px;
+    font-family: sans-serif;
 }
 
-header ul {
-    table-layout: fixed; 
+body > * {
+    grid-column: 2 / -2;
+}
+
+header {
+    grid-row: head;
+    justify-self: center;
+    align-self: center;
+}
+
+h1 {
     text-align: center;
-    width: 60%;
-    display: table;
-    margin: 25px auto;
-    list-style-type: none;
+    align-self: center;
+    font-size: 40px;
 }
 
-header li {
-    font-size: 25px;
-    cursor: pointer;
-    display: table-cell; 
-    
+nav {
+    justify-self: center;
+    align-self: end;
 }
-.headerList:hover {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 20px;
+    column-gap: 20px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
     color: black;
 }
-
-
-
-#mainImg {
-    display: block;
-    margin: 100px auto;
-    border: dotted rgb(250, 137, 32) 15px;
-    /*border: solid red 5px;*/
+nav a:hover {
+    color: #ef9504;
 }
-
-
-/* news */
-.scrollTitle {
-    font-size: 40px;
+#title {
+    grid-row: title;
+}
+#title p {
+    justify-self: center;
+    align-self: center;
+    font-size: 20px;
     text-align: center;
-    margin: 70px 0px;
-    margin-top: 200px;  
-}
- 
-    /* release float */
-.clearElement {
-    clear: right;
 }
 
-#news {
-    height: auto;
-    width: 60%;
-    margin: 0 auto;
-    /* background-color: rgb(250, 137, 32,0.3); */
-    border-top: solid black 1px;
-    border-bottom: solid black 1px;
-}
-
-.newsBlock {
-    text-align: center;
-    padding-top: 30px;
-    /* border: solid red 1px; */
-}
-
-.newsBlock p{
-    display: inline-block;
-    vertical-align: top;
-    border: solid rgb(250, 137, 32) 2px;
-    border-radius: 20px;
+span {
+    font-size: 24px;
+    font-weight: bold;
     
 }
-
-.newsP {
-    margin: 40px 40px;
-    height: 200px;
-    width: 200px;
-    padding-top:10px;
+#news {
+    grid-row: news;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 10px;
+    gap: 20px 10px;
+}
+section a {
+    color: black;
+    text-decoration: none;
+}
+section a:hover {
+    text-decoration: underline;
+}
+section p {
+    font-size: 14px;
 }
 
-.newsImg:hover{
-    width: 315px;
-    height: 265px;
+#shop {
+    grid-row: shop;
 }
 
-#newsBtn {
-    font-size: 15px;
-    padding: 10px 5px;
-    float: right;
-}
-
-
-
-/* shop */
-.shopInfo {
-    height: 500px;
-    /*border: solid red 1px;*/
-}
-
-.info {
-    font-size: 25px;
-    text-align: center; 
-}
-
-#shopBtn {
-    text-align: center;
-    margin: 30px auto;
-}
-
-#shopBtn input {
-    font-size: 20px;
-    background-color: rgb(250, 137, 32);
-    padding: 10px 20px;
-    border-radius: 10px;
-
-}
-
-#shopPhoto li{
-    float: left;
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-    width: calc(100% /3);
-    /*border: solid red 1px;*/
-}
-
-
-/* access */
-#access {
-    text-align: center;
-    height: auto;
-    margin-bottom: 100px;
-}
-.address {
-    font-size: 20px;
-    margin: 20px auto;
-}
-
-
-/* footer */
-footer {
-    background-color: rgba(37, 36, 36, 0.753);
-    height: 150px;
-    color: white;
-    width: 100%;
+#shop p {
+    font-size: 17px;
     text-align: center;
 }
-
-footer p{
-    font-size: 25px;
+input {
+    padding: 10px 40px;
+    background-color: #ef9504;
     font-weight: bold;
-    padding-top: 20px;
-    /*border: solid red 5px;*/
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+.input {
+    text-align: center;
+}
+#sub {
+    grid-row: sub;
+}
+#sub p {
+    text-align: center;
 }
 
-.fa-instagram {
-    font-size:70px; 
-    color: rgb(250, 137, 32);
-    margin-top: 20px;
+footer {
+    grid-row: foot;
+    text-align: center;
+}
+footer p {
+    font-size: 14px;
+}
+#instagramIcon {
+    font-size: 30px;
 }
