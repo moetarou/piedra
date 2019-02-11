@@ -17,6 +17,7 @@ header {
     height: 80px;
     border-bottom-right-radius: 40px;
     border-bottom-left-radius: 40px;
+   
 }
 
 header ul {
@@ -25,12 +26,14 @@ header ul {
     width: 60%;
     display: table;
     margin: 25px auto;
+    list-style-type: none;
 }
 
 header li {
     font-size: 25px;
     cursor: pointer;
     display: table-cell; 
+    
 }
 .headerList:hover {
     color: black;

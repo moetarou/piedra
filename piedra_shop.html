@@ -13,34 +13,127 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">       
     </head>
 
-<body>
-    <div class="shopContainer">
-        <div class="containerLeft">
-            <p class="foodName">チーズケーキ</p>
-            <img src="#" width="" height="">
-            <p>大阪、西田辺にあるスペインレストランピエドラの一番人気のデザート、PiEDRAチーズケーキです。<br>
-                    濃厚な生地を高温で焼き上げ、表面は香ばしく、中はとろっとクリーミーに仕上げました。<br>
-                    お届けまで3日から5日ほどいただきます。<br>
-                    別途送料がかかります。<br>
-                    ヤマトクール便（冷凍）での配送を予定しています。<br>
-                    直径15cm丸型</p>
+    <body>
+        <div class="clearElement">
+            <div class="shopContainer">
+                <div class="containerLeft">
+                    <p class="foodName">チーズケーキ</p>
+                    <img src="piedra-photo/S__1368081.jpg" width="500px" height="350px">
+                    <p class="explain">大阪、西田辺にあるスペインレストランピエドラの一番人気のデザート、PiEDRAチーズケーキです。<br>
+                            濃厚な生地を高温で焼き上げ、表面は香ばしく、中はとろっとクリーミーに仕上げました。<br>
+                            お届けまで3日から5日ほどいただきます。<br>
+                            別途送料がかかります。<br>
+                            ヤマトクール便（冷凍）での配送を予定しています。<br>
+                            直径15cm丸型</p>
+                </div>
+                <div class="containerRight">
+                    <p class="price">¥２,８００(税抜き)</p>
+                    <p class="selectBox" name="selectBox">数量
+                        <select id="number">
+                            <option value="0">0</option>
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                    <input value="カートに入れる" id="putCart" type="button" onclick="caliculate()" > 
+                </div>
+            </div>
+            <div class="shopContainer">
+                <div class="containerLeft">
+                    <p class="foodName">パスタ</p>
+                    <img src="piedra-photo/S__1368090.jpg" width="500px" height="350px">
+                    <p class="explain">大阪、西田辺にあるスペインレストランピエドラの一番人気のデザート、PiEDRAチーズケーキです。<br>
+                            濃厚な生地を高温で焼き上げ、表面は香ばしく、中はとろっとクリーミーに仕上げました。<br>
+                            お届けまで3日から5日ほどいただきます。<br>
+                            別途送料がかかります。<br>
+                            ヤマトクール便（冷凍）での配送を予定しています。<br>
+                            直径15cm丸型</p>
+                </div>
+                <div class="containerRight">
+                    <p class="price">¥１,５００(税抜き)</p>
+                    <p class="selectBox" name="selectBox">数量
+                        <select id="number2">
+                            <option value="0">0</option>
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                    <input value="カートに入れる" id="putCart" type="button" onclick="caliculate()" >  
+                </div>
+            </div>
+            <div class="shopContainer">
+                <div class="containerLeft">
+                    <p class="foodName">パン</p>
+                    <img src="piedra-photo/S__1368098.jpg" width="500px" height="350px">
+                    <p class="explain">大阪、西田辺にあるスペインレストランピエドラの一番人気のデザート、PiEDRAチーズケーキです。<br>
+                            濃厚な生地を高温で焼き上げ、表面は香ばしく、中はとろっとクリーミーに仕上げました。<br>
+                            お届けまで3日から5日ほどいただきます。<br>
+                            別途送料がかかります。<br>
+                            ヤマトクール便（冷凍）での配送を予定しています。<br>
+                            直径15cm丸型</p>
+                </div>
+                <div class="containerRight">
+                    <p class="price">¥４００(税抜き)</p>
+                    <p class="selectBox" name="selectBox">数量
+                        <select id="number3">
+                            <option value="0">0</option>
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                    <input value="カートに入れる" id="putCart" type="button" onclick="caliculate()" > 
+                </div>
+            </div>  
+            <div class="shopContainer">
+                <div class="containerLeft">
+                    <p class="foodName">ピザ</p>
+                    <img src="piedra-photo/S__1368078.jpg" width="500px" height="350px">
+                    <p class="explain">大阪、西田辺にあるスペインレストランピエドラの一番人気のデザート、PiEDRAチーズケーキです。<br>
+                            濃厚な生地を高温で焼き上げ、表面は香ばしく、中はとろっとクリーミーに仕上げました。<br>
+                            お届けまで3日から5日ほどいただきます。<br>
+                            別途送料がかかります。<br>
+                            ヤマトクール便（冷凍）での配送を予定しています。<br>
+                            直径15cm丸型</p>
+                </div>
+                <div class="containerRight">
+                    <p class="price">¥２,０００(税抜き)</p>
+                    <p class="selectBox" name="selectBox">数量
+                        <select id="number4">
+                            <option value="0">0</option>
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </p>
+                    <input value="カートに入れる" id="putCart" type="button" onclick="caliculate()" > 
+                </div>
+            </div>
+            <footer>
+                <div id="cart">
+                    <p class="cartTitle">カートの中身</p>
+                    <input type="button" id="recaliculate" value="更新" onclick="caliculate()">
+                    <div class="sum">
+                        <p id="productSum"></p>
+                        <p id="taxSum"></p>
+                        <p id="totalSum"></p>
+                    </div>
+                </div> 
+            </footer>        
         </div>
-        <div class="containerRight">
-            <p class="price">¥２,８００</p>
-            <p>数量
-                <select name="number">
-                    <option value="one" selected>1</option>
-                    <option value="two"  >2</option>
-                    <option value="three">3</option>
-                    <option value="four" >4</option>
-                    <option value="five" >5</option>
-                </select>
-            </p>
-            <input value="カートに入れる" id="putCart" type="button">
-            <p>twitter</p>
-            <p>facebook</p>
-        </div>
-    </div>
 
-</body>
+        <!----javascriptの同期リンク----->
+        <script type="text/javascript" src="piedra_shop.js"></script>
+
+    </body>
 </html>

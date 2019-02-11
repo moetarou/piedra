@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>PIEDRA</title>
+        <meta name="viewport" content="width=device-width">
         <!-- javascript -->
         <link rel ="javascript" href="piedra.js">
         <!-- css -->
@@ -18,22 +19,21 @@
 
         <!-- header -->
         <header>
-            <ul>
-                <li onclick="scrollToTop()" class="headerList">ホーム</li>
-                <li onclick="scrollToNews()" class="headerList">お知らせ</li>
-                <li onclick="scrollToShop()" class="headerList">ショップ</li>
-                <li onclick="scrollToAccess()" class="headerList">アクセス</li>
-            </ul>
+            <nav>
+                <ul>
+                    <li onclick="scrollToTop()"><a href="#">ホーム</a></li>
+                    <li onclick="scrollToNews()" ><a href="#">お知らせ</a></li>
+                    <li onclick="scrollToShop()" ><a href="#">ショップ</a></li>
+                    <li onclick="scrollToAccess()" ><a href="#">アクセス</a></li>
+                </ul>
+            </nav>
         </header>
       
 
-        <!-- container -->
-        <div>
-            <img id="restaurantImg" src="C352FFE2-C224-4E55-8EC1-72EFB452C2D7.jpg" width="300px" height="300px" >
-        </div>
-        <div>
+        <h1>Bar Restaurant PIEDRA</h1>
+        <figure>
             <img id="containerImg" src="piedra-photo/S__1368085.jpg" width="1000px" height="700px">
-        </div>
+        </figure>
 
 
         <!-- news -->
@@ -53,7 +53,6 @@
                 <p class="newsP">パーティープランのご用意ができました！飲み放題月のプランもございます。３名様からご予約可能です！</p>
             </div>
             <!-- empty div -->
-            <input id="newsBtn" type="button" value="お知らせ一覧" onclick="newsOpen()";>
             <div class=clearElement></div>
         </div> 
 

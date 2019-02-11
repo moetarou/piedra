@@ -41,16 +41,11 @@
        
     
 // newPage function
-    // open news page with new page
-    function newsOpen() {
-        document.getElementById('newsBtn').onclick =
-            window.open("file:///Users/ishiharamoe/workspace/PIEDRA%20%20hp/piedra_news.html");
-    }
 
     // open shop page with new page
     function toShop() {
         document.getElementById('shopBtn').onclick =
-            window.open("file:///Users/ishiharamoe/workspace/PIEDRA%20%20hp/piedra_shop.html");
+            window.open("file:///Users/ishiharamoe/workspace/piedra/piedra_shop.html");
     }
 
     // open instagram with new page
