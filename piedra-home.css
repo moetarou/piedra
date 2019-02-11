@@ -1,11 +1,5 @@
 * {
-    list-style: none;
-    font-family: 'Nanum Gothic Coding', monospace;
 	margin: 0;
-	padding: 0;
-	border: 0;
-    text-decoration: none;
-    /* border: solid red 1px; */
 }
 
 
@@ -39,15 +33,9 @@ header li {
     color: black;
 }
 
-/* container */
-#restaurantImg {
-    display: block;
-    margin:0 auto;
-    padding-top: 200px;  
-    /*border: solid red 1px;*/
-}
 
-#containerImg {
+
+#mainImg {
     display: block;
     margin: 100px auto;
     border: dotted rgb(250, 137, 32) 15px;

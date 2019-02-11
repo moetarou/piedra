@@ -34,7 +34,7 @@
         else {
         num ++;
         }
-    document.getElementById("containerImg").src=pics[num];
+    document.getElementById("mainImg").src=pics[num];
     setTimeout("slideshow_timer()",3000); 
     };
     slideshow_timer();

@@ -21,53 +21,71 @@
         <header>
             <nav>
                 <ul>
-                    <li onclick="scrollToTop()"><a href="#">ホーム</a></li>
-                    <li onclick="scrollToNews()" ><a href="#">お知らせ</a></li>
-                    <li onclick="scrollToShop()" ><a href="#">ショップ</a></li>
-                    <li onclick="scrollToAccess()" ><a href="#">アクセス</a></li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">NEWS</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">ACCESS</a></li>
                 </ul>
             </nav>
         </header>
       
-
-        <h1>Bar Restaurant PIEDRA</h1>
         <figure>
-            <img id="containerImg" src="piedra-photo/S__1368085.jpg" width="1000px" height="700px">
+            <img id="mainImg" src="piedra-photo/S__1368085.jpg" width="1000px" height="700px">
         </figure>
 
+        <h1>Bar Restaurant PiEDRA</h1>
+
+        <p>OPEN</p>
+        <p>Lunch  11:30〜14:00<br>
+           Dinner 17:00〜23:00<br>
+           (Last call  22:30)</p>
+        <p>CLOSED</p>
+        <p>Tuesday   火曜日</p>
+        <p>RESERVATION</p>
+        <p>Tel 06-6657-6687</p>
 
         <!-- news -->
-        <p class="scrollTitle">お知らせ</p>
-        <div id="news">
-            <div class="newsBlock">
-                <img class="newsImg" src="piedra-photo/S__1368088.jpg" width=300px height="250px">
-                <p class="newsP">コースメニューもご用意しております。ご予約は３日前まで承っております。ご予算に合わせてプランも提案させていただいてます。お気軽にご相談ください！
-                </p>
-            </div>
-            <div class="newsBlock">
-                <img class="newsImg" src="piedra-photo/S__1368089.jpg" width=300px height="250px">
-                <p class="newsP">１２月３０日から１月３日は年末年始のためお休みさせていただきます。４日はランチから営業いたします。</p>
-            </div>
-            <div class="newsBlock">
-                <img class="newsImg" src="piedra-photo/S__1368090.jpg" width=300px height="250px">
-                <p class="newsP">パーティープランのご用意ができました！飲み放題月のプランもございます。３名様からご予約可能です！</p>
-            </div>
+        <h2 class="scrollTitle">お知らせ</h2>
+
+        <section>
+            <article>
+                <a href="#">
+                    <figure><img src="piedra-photo/S__1368088.jpg"></figure>
+                    <h4>コースメニューもご用意しております。</h4>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <figure><img src="piedra-photo/S__1368089.jpg"></figure>
+                    <h4>１２月３０日から１月３日は年末年始のためお休みさせていただきます。</h4>
+                </a>
+            </article><article>
+                <a href="#">
+                    <figure><img src="piedra-photo/S__1368090.jpg"></figure>
+                    <h4>パーティープランのご用意ができました！</h4>
+                </a>
+            </article>
+        </section>
+ 
+            
+         
             <!-- empty div -->
             <div class=clearElement></div>
-        </div> 
-
+     
+         </section>
 
         <!-- shop -->
-        <p class="scrollTitle">ショップ</p>
-        <div class="shopInfo">
+        <h2 class="scrollTitle">ショップ</h2>
+
+        <div class="container">
             <p class="info">PIEDRAで一番人気のデザートの販売を始めました<br>
                             PIEDRAチーズケーキ  ¥2,850(税込)15cm <br>
                             お受け取り希望日の5日前までのご注文をお願いします。<br>
                             全国配送可  別途送料を頂戴します。(ヤマトクール便冷凍)
             </p>  
-            <p id="shopBtn">
             <input  type="button" value="配送をご希望の方はこちら" onclick="toShop()" >
-            </p>
+        
             <ul id="shopPhoto">
                 <li><img src="piedra-photo/S__1368085.jpg" width="450px" height="300px" class="cake"></li>
                 <li><img src="piedra-photo/S__1368078.jpg" width="450px" height="300px" class="cake"></li>
@@ -77,8 +95,9 @@
       
 
         <!-- access -->
-        <div id="access">
-            <p class="scrollTitle">アクセス</p>
+       
+            <h2 class="scrollTitle">アクセス</h2>
+             <div id="access">
             <p class="address">大阪市阿倍野区西田辺1-4-21FUMOSE西田辺1F</p>
             <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.34348240365!2d135.51394391471544!3d34.620759295004206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000ddd2a4049bdb%3A0x7809453a871c378c!2z44OU44Ko44OJ44Op!5e0!3m2!1sja!2sjp!4v1547472316077" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
