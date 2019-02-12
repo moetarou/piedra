@@ -43,6 +43,7 @@ h1 {
 }
 
 nav {
+    grid-row: head;
     justify-self: center;
     align-self: end;
 }
@@ -103,7 +104,7 @@ section p {
 }
 
 #shop p {
-    font-size: 17px;
+   
     text-align: center;
 }
 input {
@@ -134,3 +135,29 @@ footer p {
 #instagramIcon {
     font-size: 30px;
 }
+
+/* PC版の設定 */
+body {
+    grid-template-columns: 
+                    0.2fr repeat(6,1fr) 0.2fr;
+    grid-column-gap: 5%;
+    grid-template-rows:
+                    [head]100px
+                    [title]auto
+                    [news]auto
+                    [shop]auto
+                    [sub]auto
+                    [foot]100px;
+}
+
+@media (min-width: 768px) {
+/* PC版：ヘッダー */
+section {
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+    column-gap:20px;
+}
+
+}
+/* PC版の設定終了 */
