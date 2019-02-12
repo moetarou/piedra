@@ -216,9 +216,8 @@ aside a {
     color: black;
 }
 
-
 @media (min-width: 768px) {
-    
+
 /* PC版の設定 */
 body {
     grid-template-columns: 
