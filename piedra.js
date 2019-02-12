@@ -1,25 +1,6 @@
 
 'use strict'
 
-// scroll function
-    //scroll to top
-    function scrollToTop() {
-        scrollTo(0, 0);
-    }
-    //scroll to news
-    function scrollToNews() {
-    scrollTo( 0, 1400 );
-    }
-    //scroll to shop
-    function scrollToShop() {
-    scrollTo(0, 2700);
-    }
-    //scroll to access
-    function scrollToAccess() {
-        scrollTo(0, 3500);
-    }
-
-
 // slideShow function    
     //function of slideshow
     var pics= ["piedra-photo/S__1368086.jpg","piedra-photo/S__1368098.jpg","piedra-photo/S__1368082.jpg","piedra-photo/S__1368088.jpg"];
@@ -53,11 +34,3 @@
         document.getElementById('instagramIcon').onclick=
             window.open("https://www.instagram.com/piedra1121/?hl=ja");
     }
-
-
-    
-
-       
-  
-
-    

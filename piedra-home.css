@@ -11,7 +11,6 @@ img {
 }
 
 body {
-   
     display: grid;
     grid-template-rows:
                     [head]100px
@@ -45,8 +44,7 @@ header a {
 h1 {
     text-align: center;
     align-self: center;
-    font-size: 40px;
-    
+    font-size: 35px;
 }
 
 nav {
@@ -111,16 +109,16 @@ section p{
 }
 
 #shop p {
-   
+    margin-top: 20px;
     text-align: center;
 }
+
 input {
     padding: 10px 40px;
     background-color: #ef9504;
     font-weight: bold;
     border-radius: 10px;
     margin-top: 10px;
-
 }
 .input {
     text-align: center;
@@ -135,8 +133,6 @@ input {
 footer {
     grid-row: foot;
     text-align: center;
-    
-
 }
 /* フッターのバー */
 body::after {
@@ -145,7 +141,6 @@ body::after {
     grid-column: 1 / -1;
     grid-row: foot;
     z-index: -1;
-
 }
 footer p {
     font-size: 14px;
@@ -160,9 +155,7 @@ footer p {
                     [head]100px
                     [article]auto
                     [pickup]auto
-                    [foot]100px;
-    
-
+                    [foot]100px;  
 }
 aside {
     border: solid 1px #dddddd;
@@ -218,13 +211,14 @@ aside ul {
     grid-column: 1 / -1;
     grid-row: article;
 }
-
-
 aside a {
     text-decoration: none;
     color: black;
 }
+
+
 @media (min-width: 768px) {
+    
 /* PC版の設定 */
 body {
     grid-template-columns: 
@@ -239,15 +233,12 @@ body {
                     [foot]100px;
 }
 
-
-/* PC版：ヘッダー */
 section {
-
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
     column-gap:20px;
 }
-/* PC版記事ページ */
+
 .post {
     grid-template-rows: 
                 [head]100px
