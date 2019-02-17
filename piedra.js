@@ -23,7 +23,7 @@
     
 // newPage function
 
-    // open shop page with new page
+    // open shop with new page
     function toShop() {
         document.getElementById('shopBtn').onclick =
             window.open("file:///Users/ishiharamoe/workspace/piedra/piedra_shop.html");

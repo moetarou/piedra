@@ -91,11 +91,13 @@ input {
     border-radius: 10px;
     margin-top: 10px;
 }
+
 /* フッターのバー */
 footer {
     grid-row: foot;
     text-align: center;
 }
+
 /* フッターのバー */
 body::after {
     content:"";
@@ -104,12 +106,15 @@ body::after {
     grid-row: foot;
     z-index: -1;
 }
+
 footer p {
     font-size: 14px;
 }
+
 #instagramIcon {
     font-size: 30px;
 }
+
 @media (min-width: 768px) {
     /* PC版の設定 */
     body {
@@ -157,5 +162,6 @@ footer p {
     .shop::before {
         margin-top: -20px;
     }
-    }
+
+}
     /* PC版の設定終了 */
