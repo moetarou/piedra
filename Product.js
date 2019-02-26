@@ -1,43 +1,16 @@
-// class Product {
-//     constructor(name,price) {
-//         this.name = name;
-//         this.price = price;
-//         this.tax=1.08;
-
-//     }
-//     getNumber() {
-
-//         count= document.getElementById('number').value;
-//     }
-    
-
-//     info() {
-//         return(this.name + ':' + this.price);
-//     };
-
-//     totalPrice() {
-//         return  (price * count *this.tax);
-        
-//     } 
-// }
-// ;
 
 
-// var cheeseCake = new Product('cheeseCake',2800);
-//     cheeseCake.info();
+var cheeseCake = new Product('cheeseCake',2800);
+    cheeseCake.info();
 
-// var pasta = new Product('pasta',1500);
-//     pasta.info();
+var pasta = new Product('pasta',1500);
+    pasta.info();
 
-// var bread = new Product('bread',400);
-//     bread.info();
+var bread = new Product('bread',400);
+    bread.info();
 
-// var pizza = new Product('pizza',2000);
-//     pizza.info();
-// // cheeseCake
-// var cheeseCake = new Product();
-// cheeseCake.name="cheeseCake";
-// cheeseCake.price=300;
+var pizza = new Product('pizza',2000);
+    pizza.info();
 
 
 // console.log(cheeseCake.info());
@@ -133,12 +106,3 @@
 // }
 // caliculate();
 // console.log(productSum);
-function total() {
-    yen = 0;
-    for (i=0; i< document.A_Form.length-1; i++) {
-    if (document.A_Form.elements[i].checked) {
-    yen += eval(document.A_Form.elements[i].value);
-    }
-    }
-    document.A_Form._total.value = yen;
-    }
